@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    #college-info {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #555;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Saveetha School Of Engineering </h1>
+  <p id="college-info">
+    <b>Saveetha School Of Engineering</b> is a prestigious institution offering <b>world-class education</b> in various disciplines. 
+    The <b>state-of-the-art campus</b> provides an ideal environment for learning and personal growth. 
+    Join us to achieve <b>excellence</b> in academics and extracurricular activities.
+  </p>
+
+  <form>
+    <button type="button" id="change">Change</button>
+  </form>
+
+  <script>
+    // Get the paragraph and button elements
+    const paragraph = document.getElementById('college-info');
+    const changeButton = document.getElementById('change');
+
+    // Function to change the style of the paragraph
+    changeButton.addEventListener('click', () => {
+      paragraph.style.fontFamily = 'Georgia, serif';
+      paragraph.style.fontSize = '20px';
+      paragraph.style.color = 'darkblue';
+    });
+
+    // Add mouseover and mouseout events to highlight bold words
+    const boldWords = paragraph.querySelectorAll('b');
+    boldWords.forEach(word => {
+      word.addEventListener('mouseover', () => {
+        word.classList.add('highlight');
+      });
+      word.addEventListener('mouseout', () => {
+        word.classList.remove('highlight');
+      });
+    });
+  </script>
+</body>
+</html>
