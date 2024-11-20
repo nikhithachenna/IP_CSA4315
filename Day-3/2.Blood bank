@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Management Information System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav {
+            background-color: #c0392b;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .donor-section, .hospital-section {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        button, input[type="submit"] {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        label, input, select {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        input, select {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Blood Management Information System</h1>
+        <p>Efficiently managing blood donor and blood bank information</p>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#donor-section">Donor Portal</a>
+        <a href="#hospital-section">Hospital Portal</a>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Donor Section -->
+        <section id="donor-section">
+            <h2>Donor/User Portal</h2>
+            <div class="donor-section">
+                <h3>Register as a Donor</h3>
+                <form>
+                    <label for="donor-name">Name:</label>
+                    <input type="text" id="donor-name" name="donor-name" placeholder="Enter your name">
+                    <label for="donor-email">Email:</label>
+                    <input type="email" id="donor-email" name="donor-email" placeholder="Enter your email">
+                    <label for="donor-blood-group">Blood Group:</label>
+                    <select id="donor-blood-group" name="donor-blood-group">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                    <label for="donor-location">Location:</label>
+                    <input type="text" id="donor-location" name="donor-location" placeholder="Enter your location">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+            <div class="donor-section">
+                <h3>Login</h3>
+                <form>
+                    <label for="donor-login-id">Donor ID:</label>
+                    <input type="text" id="donor-login-id" name="donor-login-id" placeholder="Enter your Donor ID">
+                    <label for="donor-password">Password:</label>
+                    <input type="password" id="donor-password" name="donor-password" placeholder="Enter your password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="donor-section">
+                <h3>Post Donor Information</h3>
+                <button>Post Information</button>
+            </div>
+            <div class="donor-section">
+                <h3>Search Donor Details</h3>
+                <form>
+                    <label for="search-donor-blood-group">Blood Group:</label>
+                    <select id="search-donor-blood-group" name="search-donor-blood-group">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </section>
+        <!-- Hospital Section -->
+        <section id="hospital-section">
+            <h2>Hospital Portal</h2>
+            <div class="hospital-section">
+                <h3>Register as a Hospital</h3>
+                <form>
+                    <label for="hospital-name">Hospital Name:</label>
+                    <input type="text" id="hospital-name" name="hospital-name" placeholder="Enter hospital name">
+                    <label for="hospital-email">Email:</label>
+                    <input type="email" id="hospital-email" name="hospital-email" placeholder="Enter email">
+                    <label for="hospital-password">Password:</label>
+                    <input type="password" id="hospital-password" name="hospital-password" placeholder="Enter password">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+            <div class="hospital-section">
+                <h3>Login</h3>
+                <form>
+                    <label for="hospital-login-id">Hospital ID:</label>
+                    <input type="text" id="hospital-login-id" name="hospital-login-id" placeholder="Enter Hospital ID">
+                    <label for="hospital-password">Password:</label>
+                    <input type="password" id="hospital-password" name="hospital-password" placeholder="Enter password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="hospital-section">
+                <h3>Post Blood Bank Information</h3>
+                <button>Post Blood Bank Info</button>
+            </div>
+            <div class="hospital-section">
+                <h3>Update Blood Group Status</h3>
+                <button>Update Status</button>
+            </div>
+            <div class="hospital-section">
+                <h3>View Blood Bank Details</h3>
+                <button>View Details</button>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Blood Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
