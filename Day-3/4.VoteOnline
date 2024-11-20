@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteOnline Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #2e86de;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav {
+            background-color: #21618c;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .admin-section, .user-section {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        button, input[type="submit"] {
+            background-color: #45aaf2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        label, input, select {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        input, select {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>VoteOnline Platform</h1>
+        <p>Secure and user-friendly e-voting for all your election needs</p>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#admin-section">Admin Panel</a>
+        <a href="#user-section">Voter Portal</a>
+        <a href="#results-section">Results</a>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Admin Section -->
+        <section id="admin-section">
+            <h2>Admin Panel</h2>
+            <div class="admin-section">
+                <h3>Create Election Candidate</h3>
+                <form>
+                    <label for="candidate-name">Candidate Name:</label>
+                    <input type="text" id="candidate-name" name="candidate-name" placeholder="Enter Candidate Name">
+                    <label for="election-name">Election Name:</label>
+                    <input type="text" id="election-name" name="election-name" placeholder="Enter Election Name">
+                    <input type="submit" value="Add Candidate">
+                </form>
+            </div>
+            <div class="admin-section">
+                <h3>Allocate Election Data to Candidate</h3>
+                <form>
+                    <label for="candidate-data">Select Candidate:</label>
+                    <select id="candidate-data" name="candidate-data">
+                        <option value="candidate1">Candidate 1</option>
+                        <option value="candidate2">Candidate 2</option>
+                    </select>
+                    <label for="ward-data">Allocate Election Ward:</label>
+                    <input type="text" id="ward-data" name="ward-data" placeholder="Enter Ward Name">
+                    <input type="submit" value="Allocate">
+                </form>
+            </div>
+            <div class="admin-section">
+                <h3>Manage Voter List</h3>
+                <form>
+                    <label for="voter-list">Import Voter List:</label>
+                    <input type="file" id="voter-list" name="voter-list">
+                    <input type="submit" value="Import">
+                </form>
+                <button>View & Update Voter List</button>
+            </div>
+            <div class="admin-section">
+                <h3>Get Election Results</h3>
+                <button>View Results</button>
+            </div>
+        </section>
+        <!-- User Section -->
+        <section id="user-section">
+            <h2>Voter Portal</h2>
+            <div class="user-section">
+                <h3>Login</h3>
+                <form>
+                    <label for="voter-id">Voter ID:</label>
+                    <input type="text" id="voter-id" name="voter-id" placeholder="Enter Your Voter ID">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="user-section">
+                <h3>OTP Verification</h3>
+                <form>
+                    <label for="otp">Enter OTP:</label>
+                    <input type="text" id="otp" name="otp" placeholder="Enter OTP">
+                    <input type="submit" value="Verify">
+                </form>
+            </div>
+            <div class="user-section">
+                <h3>Vote for a Candidate</h3>
+                <form>
+                    <label for="candidate-select">Select Candidate:</label>
+                    <select id="candidate-select" name="candidate-select">
+                        <option value="candidate1">Candidate 1</option>
+                        <option value="candidate2">Candidate 2</option>
+                        <option value="candidate3">Candidate 3</option>
+                    </select>
+                    <input type="submit" value="Submit Vote">
+                </form>
+            </div>
+        </section>
+        <!-- Results Section -->
+        <section id="results-section">
+            <h2>Election Results</h2>
+            <p>Results will be displayed here once the election concludes.</p>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VoteOnline. All rights reserved.</p>
+    </footer>
+</body>
+</html>
