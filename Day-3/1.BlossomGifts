@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlossomGifts - Flowers and Gifts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f4a261;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #264653;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product-category, .product-item, .admin-section {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to BlossomGifts</h1>
+        <p>Your one-stop destination for flowers and gifts</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#categories">Categories</a>
+        <a href="#cart">Cart</a>
+        <a href="#admin">Admin Panel</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2>Shop by Categories</h2>
+            <div class="product-category">
+                <h3>Flowers</h3>
+                <p>Explore our fresh floral arrangements for all occasions.</p>
+            </div>
+            <div class="product-category">
+                <h3>Gift Baskets</h3>
+                <p>Perfect gifts for your loved ones with a personal touch.</p>
+            </div>
+            <div class="product-category">
+                <h3>Personalized Gifts</h3>
+                <p>Customize gifts to add a unique flair to your presents.</p>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product-item">
+                <img src="flower-bouquet.jpg" alt="Flower Bouquet">
+                <h3>Elegant Flower Bouquet</h3>
+                <p>Price: $29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="gift-basket.jpg" alt="Gift Basket">
+                <h3>Deluxe Gift Basket</h3>
+                <p>Price: $49.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="admin">
+            <h2>Admin Panel</h2>
+            <div class="admin-section">
+                <h3>Add New Products</h3>
+                <form>
+                    <label for="product-name">Product Name:</label><br>
+                    <input type="text" id="product-name" name="product-name"><br><br>
+                    <label for="product-price">Price:</label><br>
+                    <input type="number" id="product-price" name="product-price"><br><br>
+                    <label for="product-category">Category:</label><br>
+                    <select id="product-category" name="product-category">
+                        <option value="flowers">Flowers</option>
+                        <option value="gift-baskets">Gift Baskets</option>
+                        <option value="personalized-gifts">Personalized Gifts</option>
+                    </select><br><br>
+                    <button type="submit">Add Product</button>
+                </form>
+            </div>
+
+            <div class="admin-section">
+                <h3>Manage Products</h3>
+                <button>Remove Product</button>
+                <button>Update Price</button>
+            </div>
+
+            <div class="admin-section">
+                <h3>View Customer Information</h3>
+                <button>View Customers</button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BlossomGifts. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
