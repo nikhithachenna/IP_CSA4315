@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Penalty Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .user-section, .police-section, .admin-section {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        button, input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        label, input, select, textarea {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+        input, select, textarea {
+            padding: 8px;
+        }
+        a.google-map-link {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Traffic Penalty Management System</h1>
+        <p>Streamlining penalty management and reducing traffic violations</p>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#user-section">User Portal</a>
+        <a href="#police-section">Police Portal</a>
+        <a href="#admin-section">Admin Panel</a>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        <!-- User Section -->
+        <section id="user-section">
+            <h2>User Portal</h2>
+            <div class="user-section">
+                <h3>Register</h3>
+                <form>
+                    <label for="user-name">Name:</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="Enter your email">
+                    <label for="user-password">Password:</label>
+                    <input type="password" id="user-password" name="user-password" placeholder="Enter your password">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+            <div class="user-section">
+                <h3>Login</h3>
+                <form>
+                    <label for="user-login-email">Email:</label>
+                    <input type="email" id="user-login-email" name="user-login-email" placeholder="Enter your email">
+                    <label for="user-login-password">Password:</label>
+                    <input type="password" id="user-login-password" name="user-login-password" placeholder="Enter your password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="user-section">
+                <h3>View Challan</h3>
+                <button>View Challan</button>
+            </div>
+            <div class="user-section">
+                <h3>View Case Filed</h3>
+                <button>View Cases</button>
+            </div>
+        </section>
+        <!-- Police Section -->
+        <section id="police-section">
+            <h2>Police Portal</h2>
+            <div class="police-section">
+                <h3>Login</h3>
+                <form>
+                    <label for="police-id">Police ID:</label>
+                    <input type="text" id="police-id" name="police-id" placeholder="Enter Police ID">
+                    <label for="police-password">Password:</label>
+                    <input type="password" id="police-password" name="police-password" placeholder="Enter password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="police-section">
+                <h3>Rules</h3>
+                <button>View Traffic Rules</button>
+            </div>
+            <div class="police-section">
+                <h3>Create Case</h3>
+                <form>
+                    <label for="vehicle-number">Vehicle Number:</label>
+                    <input type="text" id="vehicle-number" name="vehicle-number" placeholder="Enter Vehicle Number">
+                    <label for="offense">Offense:</label>
+                    <input type="text" id="offense" name="offense" placeholder="Enter Offense">
+                    <label for="penalty">Penalty Amount:</label>
+                    <input type="number" id="penalty" name="penalty" placeholder="Enter Penalty Amount">
+                    <label for="proof-photo">Upload Proof Photo:</label>
+                    <input type="file" id="proof-photo" name="proof-photo">
+                    <input type="submit" value="Submit Case">
+                </form>
+            </div>
+            <div class="police-section">
+                <h3>Manage</h3>
+                <button>Manage Cases</button>
+            </div>
+            <div class="police-section">
+                <h3>Live Traffic Information</h3>
+                <p>Stay updated with live traffic reports:</p>
+                <a class="google-map-link" href="https://www.google.com/maps" target="_blank">View on Google Maps</a>
+            </div>
+        </section>
+        <!-- Admin Section -->
+        <section id="admin-section">
+            <h2>Admin Panel</h2>
+            <div class="admin-section">
+                <h3>Manage Police Login</h3>
+                <button>Manage Police Accounts</button>
+            </div>
+            <div class="admin-section">
+                <h3>View Daily Report</h3>
+                <button>View Reports</button>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Traffic Penalty Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
