@@ -1,0 +1,105 @@
+<%@ page import="java.sql.*" %>
+
+<%@ page language="java" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Registration Result</title>
+
+</head>
+
+<body>
+
+    <h1>Registration Result</h1>
+
+    <%
+
+        String firstName = request.getParameter("firstName");
+
+        String lastName = request.getParameter("lastName");
+
+        String username = request.getParameter("username");
+
+        String password = request.getParameter("password");
+
+        String address = request.getParameter("address");
+
+        String contactNumber = request.getParameter("contactNumber");
+
+
+
+        Connection conn = null;
+
+        PreparedStatement pst = null;
+
+
+
+        try {
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user_database", "root", "your_password");
+
+
+
+            String query = "INSERT INTO users (first_name, last_name, username, password, address, contact_number) VALUES (?, ?, ?, ?, ?, ?)";
+
+            pst = conn.prepareStatement(query);
+
+            pst.setString(1, firstName);
+
+            pst.setString(2, lastName);
+
+            pst.setString(3, username);
+
+            pst.setString(4, password); // Store passwords securely in real applications
+
+            pst.setString(5, address);
+
+            pst.setString(6, contactNumber);
+
+
+
+            int rowsInserted = pst.executeUpdate();
+
+
+
+            if (rowsInserted > 0) {
+
+                out.println("<p>Registration successful!</p>");
+
+            } else {
+
+                out.println("<p>Registration failed. Please try again.</p>");
+
+            }
+
+        } catch (Exception e) {
+
+            out.println("<p>Error: " + e.getMessage() + "</p>");
+
+        } finally {
+
+            try {
+
+                if (pst != null) pst.close();
+
+                if (conn != null) conn.close();
+
+            } catch (SQLException e) {
+
+                out.println("<p>Error closing resources: " + e.getMessage() + "</p>");
+
+            }
+
+        }
+
+    %>
+
+</body>
+
+</html>
