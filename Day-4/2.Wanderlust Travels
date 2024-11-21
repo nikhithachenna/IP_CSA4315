@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #003f7f;
+            border-radius: 4px;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        input, button, select {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Wanderlust Travels</h1>
+        <p>Your One-Stop Travel Solution</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#user-section">User</a></li>
+            <li><a href="#admin-section">Admin</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- User Section -->
+        <section id="user-section">
+            <h2>User Dashboard</h2>
+            <p>Features available for users:</p>
+            <ul>
+                <li>Register</li>
+                <li>Login</li>
+                <li>View Food Details</li>
+                <li>View Hostel Details</li>
+                <li>View Route Details</li>
+                <li>My Book Accommodation</li>
+            </ul>
+            <h3>Login</h3>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="admin-section">
+            <h2>Admin Dashboard</h2>
+            <p>Features available for administrators:</p>
+            <ul>
+                <li>Login</li>
+                <li>Post Tourism Details</li>
+                <li>Manage Food Details</li>
+                <li>Manage Hotel Details</li>
+                <li>Manage Route Details</li>
+                <li>View Booking Details</li>
+            </ul>
+            <h3>Login</h3>
+            <form>
+                <label for="admin-username">Admin Username:</label>
+                <input type="text" id="admin-username" placeholder="Enter admin username">
+
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" placeholder="Enter admin password">
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wanderlust Travels. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
