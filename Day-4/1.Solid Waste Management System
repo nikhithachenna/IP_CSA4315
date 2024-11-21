@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid Waste Management System</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0288d1;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #03a9f4;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0288d1;
+        }
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            font-weight: bold;
+        }
+        input, button, select {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0288d1;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0277bd;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0288d1;
+            color: white;
+            position: sticky;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Solid Waste Management System</h1>
+        <p>Efficient and Smart Waste Disposal</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#admin-dashboard">Admin Dashboard</a></li>
+            <li><a href="#public-dashboard">Public Dashboard</a></li>
+            <li><a href="#driver-dashboard">Driver Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Login Section -->
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Admin Dashboard -->
+        <section id="admin-dashboard">
+            <h2>Administrator Dashboard</h2>
+            <ul>
+                <li>Create Garbage Bin</li>
+                <li>Update/Delete Garbage Bin</li>
+                <li>Assign Best Route for Drivers</li>
+                <li>Manage Drivers</li>
+                <li>View Garbage Reports</li>
+                <li>View Complaints from the Public</li>
+            </ul>
+        </section>
+
+        <!-- Public Dashboard -->
+        <section id="public-dashboard">
+            <h2>General Public Dashboard</h2>
+            <ul>
+                <li>Register Complaint</li>
+                <li>View My Complaints and Status</li>
+            </ul>
+        </section>
+
+        <!-- Driver Dashboard -->
+        <section id="driver-dashboard">
+            <h2>Driver Dashboard</h2>
+            <ul>
+                <li>Check Daily Work Updates</li>
+                <li>Choose Best Route</li>
+                <li>Update Garbage Load</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Solid Waste Management System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
