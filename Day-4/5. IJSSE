@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJSSE - International Journal of Scientific and Social Excellence</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #00509e;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+        nav ul li a:hover {
+            background-color: #1abc9c;
+            border-radius: 4px;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            background: white;
+            border-radius: 8px;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00509e;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>IJSSE</h1>
+        <p>International Journal of Scientific and Social Excellence</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-journal">About Journal</a></li>
+            <li><a href="#publication-ethics">Publication Ethics</a></li>
+            <li><a href="#editorial-board">Editorial Board</a></li>
+            <li><a href="#reviewers">Reviewers</a></li>
+            <li><a href="#authors">Authors</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#call-for-paper">Call for Paper</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+        <h2>Welcome to IJSSE</h2>
+        <p>Your gateway to scientific and social excellence through quality publications.</p>
+    </section>
+
+    <section id="about-journal">
+        <h2>About Journal</h2>
+        <p>The International Journal of Scientific and Social Excellence (IJSSE) is a Scopus-indexed journal with ISSN 2395-1443 (print) and ISSN 2395-1451 (online), focusing on excellence in academic publishing.</p>
+    </section>
+
+    <section id="publication-ethics">
+        <h2>Publication Ethics</h2>
+        <p>Learn about our ethical standards and guidelines for publication integrity.</p>
+    </section>
+
+    <section id="editorial-board">
+        <h2>Editorial Board</h2>
+        <ul>
+            <li><a href="#editor-registration">Editor Registration</a></li>
+            <li><a href="#editor-login">Editor Login</a></li>
+            <li><a href="#editorial-committee">Editorial Committee</a></li>
+            <li><a href="#editor-responsibility">Editor Responsibility</a></li>
+        </ul>
+    </section>
+
+    <section id="reviewers">
+        <h2>Reviewers</h2>
+        <ul>
+            <li><a href="#reviewer-registration">Reviewer Registration</a></li>
+            <li><a href="#reviewers-login">Reviewers Login</a></li>
+            <li><a href="#list-of-reviewers">List of Reviewers for Articles</a></li>
+        </ul>
+    </section>
+
+    <section id="authors">
+        <h2>For Authors</h2>
+        <ul>
+            <li><a href="#author-registration">Author Registration</a></li>
+            <li><a href="#author-login">Author Login</a></li>
+            <li><a href="#papers-list">List of Papers Under an Author</a></li>
+            <li><a href="#author-instructions">Author Instructions</a></li>
+            <li><a href="#publication-charge">Publication Charge</a></li>
+            <li><a href="#article-template">Article Template</a></li>
+            <li><a href="#copyright-template">Copyright Form Template</a></li>
+            <li><a href="#author-guidelines">Author Guidelines</a></li>
+        </ul>
+    </section>
+
+    <section id="articles">
+        <h2>Articles</h2>
+        <ul>
+            <li><a href="#current-issue">Current Issue</a></li>
+            <li><a href="#archive">Archive</a></li>
+            <li><a href="#most-viewed">Most Viewed Articles</a></li>
+            <li><a href="#most-cited">Most Cited Articles</a></li>
+            <li><a href="#about-to-print">About to Print Articles</a></li>
+        </ul>
+    </section>
+
+    <section id="call-for-paper">
+        <h2>Call for Paper</h2>
+        <ul>
+            <li><a href="#submit-manuscript">Submit Manuscript</a></li>
+            <li><a href="#indexed-list">Indexed List</a></li>
+            <li><a href="#subscribe-newsletters">Subscribe Newsletters</a></li>
+            <li><a href="#view-feedback">View Feedback</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with the IJSSE team for inquiries or support.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IJSSE. All Rights Reserved.</p>
+        <p>ISSN (Print): 2395-1443 | ISSN (Online): 2395-1451</p>
+    </footer>
+</body>
+</html>
