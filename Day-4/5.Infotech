@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Infotech - Laptop Sales and Service</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            background: white;
+            border-radius: 8px;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #34495e;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Ram Infotech</h1>
+        <p>Your One-Stop Solution for Laptop Sales and Services</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#admin">Admin</a></li>
+            <li><a href="#sales">Sales</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#customer">Customer Info</a></li>
+            <li><a href="#rental">Laptop Rental</a></li>
+            <li><a href="#stock">Stock Maintenance</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admin Section -->
+    <section id="admin">
+        <h2>Admin Details</h2>
+        <ul>
+            <li>Login</li>
+            <li>Registration Form</li>
+        </ul>
+        <p>Admins can manage sales, services, customer data, and stock from a centralized dashboard.</p>
+    </section>
+
+    <!-- Sales Section -->
+    <section id="sales">
+        <h2>Sales</h2>
+        <p>Explore our wide range of laptops with detailed specifications and competitive pricing.</p>
+        <ul>
+            <li>Laptop Models</li>
+            <li>Configurations</li>
+            <li>Customer Reviews</li>
+        </ul>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <p>Schedule repairs, track your service status, and access troubleshooting guides.</p>
+        <ul>
+            <li>Service Scheduling</li>
+            <li>Repair Status Tracking</li>
+            <li>Troubleshooting Guides</li>
+        </ul>
+    </section>
+
+    <!-- Customer Information Section -->
+    <section id="customer">
+        <h2>Customer Information</h2>
+        <p>Track purchases and services made by customers for better support and follow-ups.</p>
+        <ul>
+            <li>Purchase History</li>
+            <li>Service History</li>
+        </ul>
+    </section>
+
+    <!-- Laptop Rental Agreement Section -->
+    <section id="rental">
+        <h2>Laptop Rental Agreement</h2>
+        <p>Details and agreements for renting laptops from Ram Infotech.</p>
+        <ul>
+            <li>Rental Terms and Conditions</li>
+            <li>Rental Pricing</li>
+        </ul>
+    </section>
+
+    <!-- Stock Maintenance Section -->
+    <section id="stock">
+        <h2>Stock Maintenance</h2>
+        <p>Manage shop inventory efficiently, including laptops and accessories.</p>
+        <ul>
+            <li>Current Stock</li>
+            <li>New Arrivals</li>
+            <li>Out-of-Stock Alerts</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ram Infotech. All Rights Reserved.</p>
+        <p>Contact us: info@raminfotech.com | Phone: +1 800 123 456</p>
+    </footer>
+</body>
+</html>
