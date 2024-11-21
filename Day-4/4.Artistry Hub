@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtistryHub - Emily Harris</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #1abc9c;
+            border-radius: 4px;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            background: white;
+            border-radius: 8px;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #1abc9c;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .gallery img {
+            width: calc(33% - 1rem);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .media-item {
+            margin-bottom: 1.5rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ArtistryHub - Emily Harris</h1>
+        <p>Celebrating the Art and Vision of Emily Harris</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#about">About the Artist</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#discography">Discography</a></li>
+            <li><a href="#media">Media Gallery</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="homepage">
+        <h2>Welcome to ArtistryHub</h2>
+        <p>Discover the incredible works of Emily Harris. Explore her portfolio, read her story, and stay updated on her latest projects.</p>
+        <img src="banner.jpg" alt="Emily Harris's Artwork Banner">
+    </section>
+
+    <!-- About the Artist -->
+    <section id="about">
+        <h2>About Emily Harris</h2>
+        <p>Emily Harris is a celebrated artist whose work spans multiple mediums, including painting, sculpture, and digital art. With a career spanning over two decades, Emily has captivated audiences worldwide with her unique vision and masterful technique.</p>
+        <img src="artist.jpg" alt="Emily Harris Portrait">
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Explore Emily's collection of artworks. Click on the images to view them in high resolution.</p>
+        <div class="gallery">
+            <img src="art1.jpg" alt="Artwork 1">
+            <img src="art2.jpg" alt="Artwork 2">
+            <img src="art3.jpg" alt="Artwork 3">
+        </div>
+    </section>
+
+    <!-- Discography -->
+    <section id="discography">
+        <h2>Discography</h2>
+        <p>A comprehensive list of Emily's published works:</p>
+        <ul>
+            <li><strong>Artwork Collection 1:</strong> Published in 2015 (ISBN: 1234567890)</li>
+            <li><strong>Artwork Collection 2:</strong> Published in 2018 (ISBN: 0987654321)</li>
+        </ul>
+    </section>
+
+    <!-- Media Gallery -->
+    <section id="media">
+        <h2>Media Gallery</h2>
+        <div class="media-item">
+            <h3>Live Painting Session</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-item">
+            <h3>Interview with Emily Harris</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- News and Updates -->
+    <section id="news">
+        <h2>News and Updates</h2>
+        <p>Stay informed about Emily's upcoming projects and exhibitions:</p>
+        <ul>
+            <li><strong>Art Exhibition:</strong> January 2024 at City Art Gallery</li>
+            <li><strong>New Artwork Launch:</strong> "Serenity," releasing in March 2024</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ArtistryHub. All Rights Reserved.</p>
+        <p>Follow Emily on <a href="https://instagram.com" style="color: #1abc9c;">Instagram</a> | <a href="https://twitter.com" style="color: #1abc9c;">Twitter</a></p>
+    </footer>
+</body>
+</html>
