@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Opinion</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .form-container { width: 300px; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h1 { text-align: center; }
+        input, textarea { width: 100%; padding: 8px; margin: 10px 0; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: #fff; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Share Your Opinion</h1>
+        <form id="opinionForm">
+            <input type="text" id="product" placeholder="Product Name" required>
+            <input type="number" id="rating" placeholder="Rating (1-5)" required>
+            <textarea id="comment" placeholder="Your Comment" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('opinionForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const product = document.getElementById('product').value;
+            const rating = document.getElementById('rating').value;
+            const comment = document.getElementById('comment').value;
+            const response = await fetch('http://localhost:3000/api/opinion', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ product, rating, comment })
+            });
+            if (response.ok) {
+                alert('Thank you for your opinion!');
+                document.getElementById('opinionForm').reset();
+            } else {
+                alert('Failed to submit opinion');
+            }
+        });
+    </script>
+</body>
+</html>
